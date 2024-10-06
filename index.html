@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+   referrerpolicy="no-referrer"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+  />
+  <link rel="icon" href="./imgs/cryptohub-icon.png" />
+  <title>CryptoHub</title>
+ </head>
+ <body class="dark">
+  <!-- Header -->
+  <header class="header">
+   <div class="container">
+    <div class="logo">
+     <h1 class="title">
+      <i class="ri-btc-line"></i>
+      CryptoHub
+     </h1>
+    </div>
+    <div class="nav-bar">
+     <ul>
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#prices" class="nav-link">Prices</a></li>
+      <li class="nav-item"><a href="#market" class="nav-link">Market</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+     </ul>
+    </div>
+    <div class="header-buttons">
+     <a href="#" id="btn">Log In</a>
+     <button id="theme">
+      <i class="ri-sun-fill"></i>
+     </button>
+     <button id="menu">
+      <i class="ri-menu-line"></i>
+     </button>
+    </div>
+   </div>
+   <!-- Menu -->
+   <div class="nav-fixed">
+    <ul>
+     <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+     <li class="nav-item"><a href="#prices" class="nav-link">Prices</a></li>
+     <li class="nav-item"><a href="#market" class="nav-link">Market</a></li>
+     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="header-buttons">
+     <a href="#" id="btn">Log In</a>
+     <button id="theme">
+      <i class="ri-sun-fill"></i>
+     </button>
+    </div>
+    <button id="close">
+     <i class="ri-close-large-line"></i>
+    </button>
+   </div>
+   <!-- Log in -->
+   <div class="log-in">
+    <div class="login-container">
+     <form>
+      <div class="login-box">
+       <a id="closeIt">
+        <i class="ri-close-large-line"></i>
+       </a>
+       <h2>Login In</h2>
+       <form action="#" method="POST">
+        <div class="input-group">
+         <label>Email Address</label>
+         <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="off"
+         />
+        </div>
+        <div class="input-group">
+         <label>Password</label>
+         <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+          autocomplete="off"
+         />
+        </div>
+        <div class="input-group">
+         <button onsubmit="false" type="submit" class="login-btn">Login</button>
+        </div>
+        <div class="input-group"></div>
+        <p class="signup-link">
+         Don't have an account? <a href="#" id="signIn">Sign Up</a>
+        </p>
+       </form>
+      </div>
+     </form>
+    </div>
+   </div>
+   <!-- Sign in -->
+   <div class="sign-up">
+    <div class="login-container">
+     <form>
+      <div class="login-box">
+       <a id="closeIt">
+        <i class="ri-close-large-line"></i>
+       </a>
+       <h2>Create Account</h2>
+       <form action="#" method="POST">
+        <div class="input-group">
+         <label>Username</label>
+         <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+          required
+          autocomplete="off"
+         />
+        </div>
+        <div class="input-group">
+         <label>Email Address</label>
+         <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="off"
+         />
+        </div>
+        <div class="input-group">
+         <label>Password</label>
+         <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+          autocomplete="off"
+         />
+        </div>
+        <div class="checkbox">
+         <input type="checkbox" id="checkbox" required />
+         <label for="checkbox">
+          I accept the <a href="#">terms</a> and <a href="#">cookies</a>
+         </label>
+        </div>
+        <div class="input-group">
+         <button onsubmit="false" type="submit" class="signup-btn">
+          Create an account
+         </button>
+        </div>
+        <p class="login-link">
+         Already have an account? <a href="#" id="logIn">Log in</a>
+        </p>
+       </form>
+      </div>
+     </form>
+    </div>
+   </div>
+  </header>
+  <!-- Home -->
+  <section class="home" id="home">
+   <div class="container">
+    <div class="home-content">
+     <h1 class="title">Stay Ahead in the Crypto Game with CryptoHub</h1>
+     <p class="sub-title">
+      At CryptoHub, we provide real-time cryptocurrency prices, comprehensive
+      market analysis, and the tools you need to navigate the fast-paced world
+      of digital finance with confidence.
+     </p>
+     <a id="Msg" class="cta-button">Get Started</a>
+    </div>
+    <div class="home-image">
+     <dotlottie-player
+      src="https://lottie.host/7ee95543-6d9f-4fba-8560-2e40f81eabe3/cvMQWPEYK4.json"
+      background="transparent"
+      speed="1"
+      style="width: 420px; height: 420px"
+      loop
+      autoplay
+     ></dotlottie-player>
+    </div>
+   </div>
+  </section>
+  <!-- Prices -->
+  <section class="prices" id="prices">
+   <div class="container">
+    <h2 class="title">Today's Cryptocurrency Prices</h2>
+    <div class="price-box">
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/BTC.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Bitcoin</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/BCH.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">BTC Cash</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/BNB.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">BNB</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/LTC.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Litecoin</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/TRX.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">TRON</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/DOGE.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Dogecoin</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/SOL.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Solana</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/XMR.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Monero</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/USDT.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Tether</p>
+      </div>
+     </div>
+     <div class="price-card">
+      <div class="image">
+       <img src="./imgs/cryptocurrencies/ETH.png" alt="" />
+      </div>
+      <div class="price-content">
+       <h3 id="price" class="title">13,000</h3>
+       <p id="name" class="sub-title">Ethereum</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Subscribe Plans -->
+  <section class="subscribe-plans" id="subscribe">
+   <div class="container">
+    <div class="wrong-msg">
+     <p class="msg">Please Log in first</p>
+    </div>
+    <h2 class="title">Choose Api Subscription Plan</h2>
+    <div class="subscribe-box">
+     <div class="subscribe-card">
+      <h3>Basic</h3>
+      <p class="sub-title">Basic personal use</p>
+      <h2 class="price">$59.99</h2>
+      <p class="time">Per Month</p>
+      <ul class="features-list">
+       <li>11 data endpoints</li>
+       <li>10K call credits/mo</li>
+       <li>No historical data</li>
+       <li>Personal use</li>
+      </ul>
+      <a id="Msg" class="select-plan">Select Plan</a>
+     </div>
+     <div class="subscribe-card active">
+      <h3>Startup</h3>
+      <p class="sub-title">For commercial use</p>
+      <h2 class="price">$99.99</h2>
+      <p class="time">Per Month</p>
+      <ul class="features-list">
+       <li>23 data endpoints</li>
+       <li>300K call credits/mo</li>
+       <li>24 months of historical data</li>
+       <li>Commercial use</li>
+      </ul>
+      <a id="Msg" class="select-plan">Select Plan</a>
+     </div>
+     <div class="subscribe-card">
+      <h3>Professional</h3>
+      <p class="sub-title">Best for scaling crypto projects</p>
+      <h2 class="price">$149.99</h2>
+      <p class="time">Per Month</p>
+      <ul class="features-list">
+       <li>All data endpoints</li>
+       <li>3M call credits/mo</li>
+       <li>All time historical data</li>
+       <li>Commercial use</li>
+      </ul>
+      <a id="Msg" class="select-plan">Select Plan</a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+   <div class="container">
+    <h2 class="title">What Our Users Say</h2>
+    <div class="testimonials-box">
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-01.png" alt="" />
+      <h3>John Doe</h3>
+      <p class="user-title">Crypto Enthusiast</p>
+      <p class="testimonial-text">
+       "CryptoHub is the best platform I’ve used for tracking real-time prices.
+       The interface is smooth and the analytics tools are incredibly helpful."
+      </p>
+     </div>
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-02.png" alt="" />
+      <h3>Jane Smith</h3>
+      <p class="user-title">Investor</p>
+      <p class="testimonial-text">
+       "I’ve tried several crypto platforms, but the security and ease of use at
+       CryptoHub are unmatched. It’s become my go-to for everything crypto."
+      </p>
+     </div>
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-03.png" alt="" />
+      <h3>Carl Johnson</h3>
+      <p class="user-title">Trader</p>
+      <p class="testimonial-text">
+       "The advanced analytics tools on CryptoHub have made a huge difference in
+       how I make decisions. I feel much more confident in my investments now."
+      </p>
+     </div>
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-04.png" alt="" />
+      <h3>Michael Brown</h3>
+      <p class="user-title">Long-term Investor</p>
+      <p class="testimonial-text">
+       "CryptoHub made it so much easier for me to track my portfolio across
+       different exchanges. The platform is user-friendly and always reliable."
+      </p>
+     </div>
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-05.png" alt="" />
+      <h3>James Anderson</h3>
+      <p class="user-title">Professional Trader</p>
+      <p class="testimonial-text">
+       "The detailed charts and market analysis tools on CryptoHub have become
+       essential for my trading strategy. It’s a powerful tool for serious
+       traders."
+      </p>
+     </div>
+     <div class="testimonial-card">
+      <img src="./imgs/testimonials/avatar-06.png" alt="" />
+      <h3>David Martinez</h3>
+      <p class="user-title">New Crypto Trader</p>
+      <p class="testimonial-text">
+       "The customer support at CryptoHub is excellent. They were quick to
+       resolve my issue, and the security measures gave me peace of mind while
+       trading."
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Call To Action -->
+  <section class="call-to-action" id="cta">
+   <div class="container">
+    <h2>Ready to Dive into the World of Cryptocurrency?</h2>
+    <p>
+     Join CryptoHub today and get instant access to real-time prices, advanced
+     analytics, and more. Don’t miss out on the next big opportunity!
+    </p>
+    <a id="Msg" class="cta-button">Get Started Now</a>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+   <div class="container">
+    <div class="footer-box">
+     <div class="footer-section">
+      <h1 class="title">
+       <i class="ri-btc-line"></i>
+       CryptoHub
+      </h1>
+      <p class="sub-title">
+       CryptoHub is your go-to platform for real-time cryptocurrency prices,
+       market analysis, and more. Stay updated with the latest trends in the
+       crypto world.
+      </p>
+     </div>
+     <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#pricing">Pricing</a></li>
+       <li><a href="#features">Features</a></li>
+       <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h3>Company</h3>
+      <ul>
+       <li><a href="#">Cookies</a></li>
+       <li><a href="#">FAQ</a></li>
+       <li><a href="#">Privacy Policy</a></li>
+       <li><a href="#">About Us</a></li>
+       <li><a href="#">Feedback</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-icons">
+       <li>
+        <a href="#">
+         <i class="ri-twitter-x-fill"></i>
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         <i class="ri-linkedin-box-fill"></i>
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         <i class="ri-reddit-fill"></i>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Copyright -->
+  <div class="footer-bottom">
+   <p>&copy; 2024 Ammar ElShreif. All Rights Reserved.</p>
+  </div>
+  <!-- Button -->
+  <a href="#">
+   <button class="scroll2Top">
+    <i class="ri-arrow-up-s-line"></i>
+   </button>
+  </a>
+  <script
+   src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+   type="module"
+  ></script>
+  <script src="script.js"></script>
+ </body>
+</html>
