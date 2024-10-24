@@ -73,24 +73,7 @@ btn.forEach((button) => {
  };
 });
 // Prices
-var xhr = new XMLHttpRequest();
-var url =
- "https://pro-api.coinmarketcap.com/v1/cryptocurrency/trending/gainers-losers";
-
-xhr.onreadystatechange = function () {
- if (this.readyState === 4 && this.status === 200) {
-  console.log(xhr.responseText);
- }
-};
-xhr.open("GET", url, true);
-xhr.send();
-
-// // إعداد الـ headers لمفتاح الـ API
-// xhr.setRequestHeader(
-//  "X-CMC_PRO_API_KEY",
-//  "4dee52ff-a1ba-4a74-840d-b68175aea0aa"
-// ); // ضع هنا مفتاح API الخاص بك
-
+// Soon
 // Wrong Msg
 let wrongMsg = document.querySelector(".wrong-msg");
 let msg = document.querySelectorAll("#Msg");
